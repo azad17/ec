@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{%block metadescription%}{%endblock%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Kanit:wght@300&family=Monda&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="{% static 'shop/css/custom.css' %}">
+    <link href="{% static 'shop/css/bootstrap.min.css' %}" rel="stylesheet" >
+
+    <title>{%block title%} {%endblock%}</title>
+</head>
+<body>
+    {%include 'shop/header.html' %}
+    {%include 'shop/navbar.html' %}
+    {%block content%}
+    {%endblock%}
+</div>
+    {%include 'shop/footer.html' %}
+<script src="{% static 'shop/js/popper.min.js' %}" ></script>
+<script src="{% static 'shop/js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
